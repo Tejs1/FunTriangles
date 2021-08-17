@@ -11,36 +11,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-family: "Poppins";
   color: black;
 }
 :root {
   --color: #d44949d5;
   --backcolor: rgba(183, 200, 251, 0.644);
+  --primary-bg: #b45309c7;
+  --brown: #b45309;
 }
-#side {
-  height: 200px;
+
+img {
+  height: 175px;
   width: 220px;
 }
-img {
-  height: 180px;
-  width: 200px;
+.content {
+  background-color: rgba(0, 255, 242, 0.082);
+  height: 210px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  margin: 7px;
 }
-#side {
-  /* padding: 1rem; */
-  height: 130px;
-  width: 180px;
-}
-#tri {
-  height: 180px;
-  width: 180px;
-}
-#ang {
-  height: 150px;
-  width: 150px;
-}
-section {
-  margin: 1rem;
+.content:hover {
+  background-color: rgba(47, 0, 255, 0.082);
 }
 
 a {
@@ -71,13 +69,13 @@ footer {
 }
 
 /* quiz */
-.goBack{
+.goBack {
   margin-top: 5px;
   width: 20rem;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
 }
-}
+
 .quiz-container {
   height: 100vh;
   text-align: left;
@@ -85,7 +83,6 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 }
 .questions {
   margin: 0.8rem;
@@ -102,32 +99,64 @@ input {
   font-size: 1rem;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 0.5rem 1.4rem;
   cursor: pointer;
-  background-color: #00000069;
-  color: #ffffff;
+  background-color: var(--brown);
+  color: white;
+  transition: all 0.5s;
 }
-.score{
+#submit-btn:hover {
+  background-color: var(--primary-bg);
+}
+.score {
   color: var(--color);
   font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   padding: 1rem;
   font-weight: bold;
 }
-.put{display: flex;
+.put {
+  display: flex;
   justify-items: center;
   justify-content: center;
   align-items: center;
 }
 
-#output{
-    margin: auto;
-    margin: 2rem;
-    width: 65%;
-    background: var(--backcolor);
-    text-align: center;
-    border-radius: 1rem;
-  
+#output {
+  margin: auto;
+  margin: 2rem;
+  width: 65%;
+  background: var(--backcolor);
+  text-align: center;
+  border-radius: 1rem;
 }
 
+.tejs {
+  margin-bottom: 15px;
+}
+h1 {
+  margin-top: 17px;
+}
+.footer-links {
+  padding: 0%;
+  margin: 0px;
+  border: none;
+  height: 30px;
+}
+i {
+  font-size: 22px;
+}
+footer a {
+  width: 30px;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+}
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+}
