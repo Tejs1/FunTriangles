@@ -28,7 +28,7 @@ function quizHandler() {
     index++;
   }
   {
-    output.innerHTML = `<p class="score"> "Your final score is : " ${score}" </p>`;
+    output.innerHTML = `<p class="score"> Your final score is : " ${score}" </p>`;
   }
 }
 button.addEventListener("click", quizHandler);
